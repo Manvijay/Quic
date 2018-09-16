@@ -28,25 +28,22 @@
     display:none;
   }
 
-  .teamGridRow{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-    padding-left:10px;
-    padding-right:10px;
-    line-height:1;
-    font-weight: 600;
+  .mobileTeam{
+    padding-bottom: 20px;
+    padding-top: 50px;
   }
 
-  .teamGridRow:first-child{
-      padding-bottom: 30px;
-      padding-top: 30px;
+  .mobileTeamGrid{
+    display: grid;
+  }
+
+  .team{
+    display: none;
   }
 
   .teamMember .card{
     position: relative;
     height: 25vh;
-    margin-bottom: 10px;
   }
 
   .footerList{

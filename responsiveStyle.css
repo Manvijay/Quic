@@ -6,7 +6,8 @@
 
   .mobileLcd{
     display:block;
-    height: 100vh;
+    min-height: 110vh;
+    padding:10px;
   }
 
   .lcdDisplayContainer{
@@ -21,4 +22,31 @@
   .distractionSec{
     display:none;
   }
+
+  .teamGridRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    padding-left:10px;
+    padding-right:10px;
+    line-height:1;
+    font-weight: 600;
+  }
+
+  .teamGridRow:first-child{
+      padding-bottom: 30px;
+      padding-top: 30px;
+  }
+
+  .teamMember .card{
+    position: relative;
+    height: 25vh;
+    margin-bottom: 10px;
+  }
+
+  .footerList{
+    left: 30%;
+    padding-bottom: 40px;
+  }
+
 }

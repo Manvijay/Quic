@@ -52,7 +52,7 @@
               </div>
       <!--************************************************************************************************-->
               <a class="nav-item nav-link active" href="#nav" style="color:white">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#lcdDisplayContainer">Product</a>
+              <a class="nav-item nav-link" href="#lcdAnnotations">Product</a>
               <a class="nav-item nav-link" href="#team">About</a>
             </div>
           </div>
@@ -80,48 +80,67 @@
     </div>
 
   <!--***********************************************************************************************-->
-    <div class="container-fluid lcdDisplayContainer">
-      <div class="container lcdDisplay" id="lcdAnnotations">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="container">
-              <div class="row" style="height: 20vh">
-
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <h2>Solar Powered</h2>
-                <p>With a 10hr battery life for overnight trips, Quic has you covered from dusk to dawn. Never plug a power cable into your GPS again, enjoy the freedom of wirelessness.
-                </p>
-              </div>
-            </div>
-
+    <div class="container-fluid lcdDisplayContainer" id="lcdAnnotations" style="overflow:hidden">
+      <div class="container" style="position: relative; max-height: 90%;display: grid;grid-template-columns: 1fr 2fr 1fr;" >
+        <div class="text">
+          <div class="row" style="position:relative;top:50%;transform:translateY(-50%)">
+            <h2>IPS LCD Display</h2>
+            <p>Crisp, high resolution display with 180 degree viewing angle makes Quic beatiful and visible from anywhere in the vehicle.
+            </p>
           </div>
+        </div>
 
-          <div class="col-md-6">
-            <img src="product.gif" height="400">
+        <div class="productGifConatiner" style="position:relative;max-height:90%;margin: 0 auto;" >
+          <img src="product.gif">
+        </div>
+
+        <div>
+          <div class="text" style="position:relative;top:50%;transform:translateY(-50%)">
+            <div class="row" style="padding-bottom:20vh;">
+              <h2>Solar Powered</h2>
+              <p>With a 10hr battery life for overnight trips, Quic has you covered from dusk to dawn. Never plug a power cable into your GPS again, enjoy the freedom of wirelessness.
+              </p>
+            </div>
+
+            <div class="row">
+              <h2>Simple Design</h2>
+              <p>Attractive, no-frills design puts directions you need a glance away. Quic folds away when you don't need it. The latest Bluetooth 5 technology ensures seamless pairing
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div class="col-md-3">
-            <div class="container">
-              <div class="row">
-                <h2>IPS LCD Display</h2>
-                <p>Crisp, high resolution display with 180 degree viewing angle makes Quic beatiful and visible from anywhere in the vehicle.
-                </p>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row" style="height: 20vh">
+      </div>
+    </div>
 
-              </div>
+
+
+    <div class="container-fluid mobileLcd" id="lcdAnnotations" style="">
+      <div class="container" style="position: relative; max-height: 90%;display: grid;grid-template-columns: 1fr 1fr 1fr;" >
+
+        <div class="text">
+          <div class="row" style="position:relative;top:50%;transform:translateY(-50%)">
+            <h2>IPS LCD Display</h2>
+            <p>Crisp, high resolution display with 180 degree viewing angle makes Quic beatiful and visible from anywhere in the vehicle.
+            </p>
+          </div>
+        </div>
+
+        <div>
+        </div>
+
+        <div>
+          <div class="text" style="position:relative;top:50%;transform:translateY(-50%)">
+            <div class="row" style="padding-bottom:20vh;">
+              <h2>Solar Powered</h2>
+              <p>With a 10hr battery life for overnight trips, Quic has you covered from dusk to dawn. Never plug a power cable into your GPS again, enjoy the freedom of wirelessness.
+              </p>
             </div>
-            <div class="container">
-              <div class="row">
-                <h2>Simple Design</h2>
-                <p>Attractive, no-frills design puts directions you need a glance away. Quic folds away when you don't need it. The latest Bluetooth 5 technology ensures seamless pairing
-                </p>
-              </div>
+
+            <div class="row">
+              <h2>Simple Design</h2>
+              <p>Attractive, no-frills design puts directions you need a glance away. Quic folds away when you don't need it. The latest Bluetooth 5 technology ensures seamless pairing
+              </p>
             </div>
           </div>
         </div>
@@ -129,6 +148,32 @@
     </div>
   <!--***********************************************************************************************-->
     <div class="container-fluid distractionSec">
+      <div class="row">
+        <div class="col-md-7 col-sm-7 distractionImageContainer">
+          <img src="distractionPic.png">
+        </div>
+        <div class="col-md-5 col-sm-5 distractionTextContainer">
+          <div class="distractionText">
+            <h2>97% of distracted drivers use GPS on their phone.</h2>
+            <div class="distractionTextPara">
+              <p>
+                Distracted driving is huge problem - GPS navigation is the most common distraction behind the wheel (eSurance survey). Quic focuses on keeping you focused on the road not your smart phone.
+              </p>
+            </div>
+
+            <div class="container-fluid">
+              <!-- Begin MailChimp Signup Form -->
+              <!-- Trigger/Open The Modal -->
+              <button class="btn" id="driveSafe" style="width:18vw;height:12vh">Drive More Safely </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid mobileDistractionSec">
       <div class="row">
         <div class="col-md-7 col-sm-7 distractionImageContainer">
           <img src="distractionPic.png">
@@ -166,21 +211,27 @@
             <div class="row teamGridRow">
               <div class="teamMember">
                 <div class="card">
-                  <img style="position:relative; width:100%; height:100%" src="george.jpg">
+                  <div class="cardImageContainer">
+                    <img src="george.jpg">
+                  </div>
                 </div>
                 George Beckstein
                 <br><span>Electrical Engineering</span>
               </div>
               <div class="teamMember">
                 <div class="card">
-                  <img style="position:relative; width:100%; height:100%" src="tony.jpg">
+                  <div class="cardImageContainer">
+                    <img src="tony.jpg">
+                  </div>
                 </div>
                 Anthony Olivet
                 <br><span>Mechanical Engineering</span>
               </div>
               <div class="teamMember">
                 <div class="card">
-                  <img style="position:relative; width:100%; height:100%" src="Steve.jpg">
+                  <div class="cardImageContainer">
+                    <img src="steve.jpg">
+                  </div>
                 </div>
                 Stephen Petoniak
                 <br><span>Industrial Design/ UX Design</span>
@@ -190,14 +241,27 @@
             <div class="row teamGridRow">
               <div class="teamMember">
                 <div class="card">
-                  <img style="position:relative; width:100%; height:100%" src="manvijay.jpg">
+                  <div class="cardImageContainer">
+                    <img src="manvijay.jpg">
+                  </div>
                 </div>
                 Manvijay Lather
                 <br><span>Front-End Development</span>
               </div>
               <div class="teamMember">
                 <div class="card">
-                  <img style="position:relative; width:100%; height:100%" src="Tommy.jpg">
+                  <div class="cardImageContainer">
+                    <img src="wesley.jpg">
+                  </div>
+                </div>
+                Wesley Csendom
+                <br><span>Project Management</span>
+              </div>
+              <div class="teamMember">
+                <div class="card">
+                  <div class="cardImageContainer">
+                    <img src="tommy.jpg">
+                  </div>
                 </div>
                 Tommy Creenan
                 <br><span>Graphic Design</span>

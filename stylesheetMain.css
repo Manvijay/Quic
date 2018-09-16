@@ -91,7 +91,7 @@ a:hover{
 }
 
 .lcdDisplayContainer{
-  min-height:90vh;
+  min-height:95vh;
   background: #d5d5d5;
   /*background-image: url("lcdAnnotations.png");
   background-size: 100% 100%;*/
@@ -103,6 +103,14 @@ a:hover{
   /*background-image: url("lcdAnnotations.png");
   background-size: 100% 100%;*/
 }
+
+.mobileLcd{
+  display: none;
+  overflow:hidden;
+  background-image:url("product.gif");
+  background-size: 100% 100%;
+}
+
 
 p{
   color: black;
@@ -160,6 +168,13 @@ h2{
   padding: 10vh 0;
 }
 
+.mobileDistractionSec{
+  display: none;
+  overflow:hidden;
+  background-image:url("distractionPic.png");
+  background-size: 100% 100%;
+}
+
 .team{
   padding:11vh 0px;
 }
@@ -181,6 +196,16 @@ h2{
   position: relative;
   height: 25vh;
   margin-bottom: 10px;
+}
+
+.cardImageContainer{
+  position: relative;
+}
+
+.cardImageContainer img{
+  position: relative;
+  width: 100%;
+  height:100%;
 }
 
 .teamMember span{

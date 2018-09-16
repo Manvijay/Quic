@@ -1,4 +1,9 @@
 @media screen and (max-width:450px){
+  body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .topWrapper{
     height: 100vh;
     background-image: url("topWrapperBackMob.png");
@@ -15,7 +20,7 @@
   }
 
   .mobileDistractionSec{
-    display:block;
+    display:none;
     height: 100vh;
   }
 

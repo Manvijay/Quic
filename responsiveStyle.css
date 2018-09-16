@@ -51,4 +51,9 @@
     padding-bottom: 40px;
   }
 
+  .bigButton{
+    height:15vh;
+    font-size: 10vw;
+  }
+
 }

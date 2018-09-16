@@ -78,7 +78,7 @@ a:hover{
 #motto h1{
   font-size:3em;
   color:white;
-  font-weight: 900
+  font-weight: 700
 }
 
 .preOrder{
@@ -109,7 +109,7 @@ p{
 
 h2{
   color: black;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .annotation1, .annotation2, .annotation3{
@@ -148,7 +148,7 @@ h2{
 
 .distractionText h2{
   font:1.5em;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .distractionTextPara{

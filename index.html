@@ -3,9 +3,9 @@
     <meta charset="utf-8" name="viewport" content="width= device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="stylesheetMain.css"/>
+    <link rel="stylesheet" type="text/css" href="responsiveStyle.css"/>
     <title>Quic</title>
     <link rel="icon" type="image" href="Favicon.png">
-    <script type="text/javascript" src="jsMain.js"></script>
   </head>
   <body>
     <div class="topWrapper container-fluid" id="nav">
@@ -16,113 +16,40 @@
           </a>
         </div>
         <div class="col-md-5">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button-->
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <!-- Begin MailChimp Signup Form -->
-                    <style>
-                    body {font-family: Arial, Helvetica, sans-serif;}
-                      /* The Modal (background) */
-                    .modal {
-                        display: none; /* Hidden by default */
-                        position: fixed; /* Stay in place */
-                        z-index: 1; /* Sit on top */
-                        padding-top: 100px; /* Location of the box */
-                        left: 0;
-                        top: 0;
-                        width: 100%; /* Full width */
-                        height: 100%; /* Full height */
-                        overflow: auto; /* Enable scroll if needed */
-                        background-color: rgb(0,0,0); /* Fallback color */
-                        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-                    }
+              <!-- Trigger/Open The Modal -->
+              <button class="btn btn-sm nav-item nav-link" id="earlyAccess" style="color:black"> Early Access</button>
 
-                    /* Modal Content */
-                    .modal-content {
-                        background-color: #fefefe;
-                        margin: auto;
-                        padding: 20px;
-                        border: 1px solid #888;
-                        width: 80%;
-                    }
-
-                    /* The Close Button */
-                    .close {
-                        color: #aaaaaa;
-                        float: right;
-                        font-size: 28px;
-                        font-weight: bold;
-                    }
-
-                    .close:hover,
-                    .close:focus {
-                        color: #000;
-                        text-decoration: none;
-                        cursor: pointer;
-                    }
-                    </style>
-                    <body>
-                    <!-- Trigger/Open The Modal -->
-                      <button class="btn btn-sm nav-item nav-link" id="earlyAccess" style="color:black"> Early Access</button>
-
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-
-                      <!-- Modal content -->
-                      <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-                      <style type="text/css">
-                      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-                      #subscribeHeader{color:black}
-                      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                       </style>
-                      <div id="mc_embed_signup">
-                      <form action="https://quick.us19.list-manage.com/subscribe/post?u=81ea92af297c8137fbe7a79ea&amp;id=5cfd7ae59b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                          <div id="mc_embed_signup_scroll">
-                        <label for="mce-EMAIL" id="subscribeHeader">Sign up to stay informed</label>
-                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_81ea92af297c8137fbe7a79ea_5cfd7ae59b" tabindex="-1" value=""></div>
-                          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                          </div>
-                      </form>
-                      </div>
-                      </div>
-
-                    </div>
-
-                    <script>
-                    // Get the modal
-                    var modal = document.getElementById('myModal');
-
-                    // Get the button that opens the modal
-                    var btn = document.getElementById("earlyAccess");
-
-                    // Get the <span> element that closes the modal
-                    var span = document.getElementsByClassName("close")[0];
-
-                    // When the user clicks the button, open the modal
-                    btn.onclick = function() {
-                        modal.style.display = "block";
-                    }
-
-                    // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() {
-                        modal.style.display = "none";
-                    }
-
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                    </script>
-
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                  <style type="text/css">
+                  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+                  #subscribeHeader{color:black}
+                  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                   </style>
+                  <div id="mc_embed_signup">
+                    <form action="https://quick.us19.list-manage.com/subscribe/post?u=81ea92af297c8137fbe7a79ea&amp;id=5cfd7ae59b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                      <label for="mce-EMAIL" id="subscribeHeader">Sign up to stay informed</label>
+                      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_81ea92af297c8137fbe7a79ea_5cfd7ae59b" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
       <!--************************************************************************************************-->
               <a class="nav-item nav-link active" href="#nav" style="color:white">Home <span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" href="#lcdDisplayContainer">Product</a>
@@ -142,109 +69,10 @@
         </div>
         <div class="row">
           <!-- Begin MailChimp Signup Form -->
-                <style>
-                body {font-family: Arial, Helvetica, sans-serif;}
-                  /* The Modal (background) */
-                .modal {
-                    display: none; /* Hidden by default */
-                    position: fixed; /* Stay in place */
-                    z-index: 1; /* Sit on top */
-                    padding-top: 100px; /* Location of the box */
-                    left: 0;
-                    top: 0;
-                    width: 100%; /* Full width */
-                    height: 100%; /* Full height */
-                    overflow: auto; /* Enable scroll if needed */
-                    background-color: rgb(0,0,0); /* Fallback color */
-                    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-                }
-
-                /* Modal Content */
-                .modal-content {
-                    background-color: #fefefe;
-                    margin: auto;
-                    padding: 20px;
-                    border: 1px solid #888;
-                    width: 80%;
-                }
-
-                /* The Close Button */
-                .close {
-                    color: #aaaaaa;
-                    float: right;
-                    font-size: 28px;
-                    font-weight: bold;
-                }
-
-                .close:hover,
-                .close:focus {
-                    color: #000;
-                    text-decoration: none;
-                    cursor: pointer;
-                }
-                </style>
-                <body>
-                <!-- Trigger/Open The Modal -->
-                <div class="col-md-6">
-                  <button class="btn preOrder" id="myBtn"> Pre-Order Now</button>
-                </div>
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-                  <style type="text/css">
-                  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-                  #subscribeHeader{color:black}
-                  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                   </style>
-                  <div id="mc_embed_signup">
-                  <form action="https://quick.us19.list-manage.com/subscribe/post?u=81ea92af297c8137fbe7a79ea&amp;id=5cfd7ae59b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                      <div id="mc_embed_signup_scroll">
-                    <label for="mce-EMAIL" id="subscribeHeader">Sign up to stay informed</label>
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_81ea92af297c8137fbe7a79ea_5cfd7ae59b" tabindex="-1" value=""></div>
-                      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                      </div>
-                  </form>
-                  </div>
-                  </div>
-
-                </div>
-
-                <script>
-                // Get the modal
-                var modal = document.getElementById('myModal');
-
-                // Get the button that opens the modal
-                var btn = document.getElementById("myBtn");
-
-                // Get the <span> element that closes the modal
-                var span = document.getElementsByClassName("close")[0];
-
-                // When the user clicks the button, open the modal
-                btn.onclick = function() {
-                    modal.style.display = "block";
-                }
-
-                // When the user clicks on <span> (x), close the modal
-                span.onclick = function() {
-                    modal.style.display = "none";
-                }
-
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-                </script>
-
+          <!-- Trigger/Open The Modal -->
+          <div class="col-md-6">
+            <button class="btn preOrder" id="preOrder"> Pre-Order Now</button>
+          </div>
   <!--************************************************************************************************-->
 
         </div>
@@ -314,113 +142,11 @@
               </p>
             </div>
 
-            <div class="container-fluid bigButtonContainer">
+            <div class="container-fluid">
               <!-- Begin MailChimp Signup Form -->
-                    <style>
-                    body {font-family: Arial, Helvetica, sans-serif;}
-                      /* The Modal (background) */
-                    .modal {
-                        display: none; /* Hidden by default */
-                        position: fixed; /* Stay in place */
-                        z-index: 1; /* Sit on top */
-                        padding-top: 100px; /* Location of the box */
-                        left: 0;
-                        top: 0;
-                        width: 100%; /* Full width */
-                        height: 100%; /* Full height */
-                        overflow: auto; /* Enable scroll if needed */
-                        background-color: rgb(0,0,0); /* Fallback color */
-                        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-                    }
-
-                    /* Modal Content */
-                    .modal-content {
-                        background-color: #fefefe;
-                        margin: auto;
-                        padding: 20px;
-                        border: 1px solid #888;
-                        width: 80%;
-                    }
-
-                    /* The Close Button */
-                    .close {
-                        color: #aaaaaa;
-                        float: right;
-                        font-size: 28px;
-                        font-weight: bold;
-                    }
-
-                    .close:hover,
-                    .close:focus {
-                        color: #000;
-                        text-decoration: none;
-                        cursor: pointer;
-                    }
-                    </style>
-
-                    <!-- Trigger/Open The Modal -->
-                    <button class="btn" id="driveSafe" style="width:18vw;height:12vh">Drive More Safely </button>
-
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-
-                      <!-- Modal content -->
-                      <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-                      <style type="text/css">
-                      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-                      #subscribeHeader{color:black}
-                      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                       </style>
-                      <div id="mc_embed_signup">
-                      <form action="https://quick.us19.list-manage.com/subscribe/post?u=81ea92af297c8137fbe7a79ea&amp;id=5cfd7ae59b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                          <div id="mc_embed_signup_scroll">
-                        <label for="mce-EMAIL" id="subscribeHeader">Sign up to stay informed</label>
-                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_81ea92af297c8137fbe7a79ea_5cfd7ae59b" tabindex="-1" value=""></div>
-                          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                          </div>
-                      </form>
-                      </div>
-                      </div>
-
-                    </div>
-
-                    <script>
-                    // Get the modal
-                    var modal = document.getElementById('myModal');
-
-                    // Get the button that opens the modal
-                    var btn = document.getElementById("driveSafe");
-
-                    // Get the <span> element that closes the modal
-                    var span = document.getElementsByClassName("close")[0];
-
-                    // When the user clicks the button, open the modal
-                    btn.onclick = function() {
-                        modal.style.display = "block";
-                    }
-
-                    // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() {
-                        modal.style.display = "none";
-                    }
-
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                    </script>
-
+              <!-- Trigger/Open The Modal -->
+              <button class="btn" id="driveSafe" style="width:18vw;height:12vh">Drive More Safely </button>
             </div>
-
-          <!--************************************************************************************************-->
-
           </div>
 
         </div>
@@ -486,109 +212,10 @@
   <!--************************************************************************************************-->
     <div class="container-fluid bigButtonContainer">
       <!-- Begin MailChimp Signup Form -->
-            <style>
-            body {font-family: Arial, Helvetica, sans-serif;}
-              /* The Modal (background) */
-            .modal {
-                display: none; /* Hidden by default */
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Sit on top */
-                padding-top: 100px; /* Location of the box */
-                left: 0;
-                top: 0;
-                width: 100%; /* Full width */
-                height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            }
-
-            /* Modal Content */
-            .modal-content {
-                background-color: #fefefe;
-                margin: auto;
-                padding: 20px;
-                border: 1px solid #888;
-                width: 80%;
-            }
-
-            /* The Close Button */
-            .close {
-                color: #aaaaaa;
-                float: right;
-                font-size: 28px;
-                font-weight: bold;
-            }
-
-            .close:hover,
-            .close:focus {
-                color: #000;
-                text-decoration: none;
-                cursor: pointer;
-            }
-            </style>
-
-            <!-- Trigger/Open The Modal -->
-            <button class="btn bigButton preOrder" id="preOrderBigButton">
-              Pre-Order Now
-            </button>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-              <style type="text/css">
-              #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-              #subscribeHeader{color:black}
-              /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-               </style>
-              <div id="mc_embed_signup">
-              <form action="https://quick.us19.list-manage.com/subscribe/post?u=81ea92af297c8137fbe7a79ea&amp;id=5cfd7ae59b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                  <div id="mc_embed_signup_scroll">
-                <label for="mce-EMAIL" id="subscribeHeader">Sign up to stay informed</label>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_81ea92af297c8137fbe7a79ea_5cfd7ae59b" tabindex="-1" value=""></div>
-                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                  </div>
-              </form>
-              </div>
-              </div>
-
-            </div>
-
-            <script>
-            // Get the modal
-            var modal = document.getElementById('myModal');
-
-            // Get the button that opens the modal
-            var btn = document.getElementById("preOrderBigButton");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks the button, open the modal
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-            </script>
-
+      <!-- Trigger/Open The Modal -->
+      <button class="btn bigButton preOrder" id="preOrderBigButton">
+        Pre-Order Now
+      </button>
     </div>
 
   <!--************************************************************************************************-->
@@ -637,5 +264,6 @@
       </div>
     </div>
 
+    <script type="text/javascript" src="jsMain.js"></script>
   </body>
 </html>

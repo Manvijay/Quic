@@ -1,0 +1,6 @@
+@media screen and (max-width:400px){
+  .topWrapper{
+    height: 100vh;
+    background-image: url("topWrapperBackMob.png");
+  }
+}

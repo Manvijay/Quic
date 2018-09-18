@@ -30,6 +30,7 @@
   }
 
   .mobileTeam{
+    display: block;
     padding-bottom: 20px;
     padding-top: 50px;
   }

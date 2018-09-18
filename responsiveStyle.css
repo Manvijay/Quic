@@ -11,7 +11,7 @@
 
   .mobileLcd{
     display:block;
-    min-height: 110vh;
+    min-height: 105vh;
     padding:10px;
     z-index: 5;
   }
